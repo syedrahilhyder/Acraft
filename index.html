@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+  <meta name="theme-color" content="#101914" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ACraft</title>
+</head>
+<body>
+  <div id="app">
+    <header><div class="brand"><span class="cube">A</span>CRAFT</div><div class="stats"><span id="mode">SURVIVAL</span><span id="coords">0, 0</span></div></header>
+    <main>
+      <canvas id="game" aria-label="ACraft game world"></canvas>
+      <div id="toast">Tap a block to mine • Select a block then tap empty space to place</div>
+      <div id="crosshair">+</div>
+      <div id="mobileControls"><div class="dpad"><button data-key="left">◀</button><button data-key="right">▶</button><button data-key="jump">▲</button></div><button id="mineBtn" class="action">MINE</button></div>
+    </main>
+    <footer><div id="hotbar"></div><button id="newWorld" title="Generate a new world">↻</button></footer>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
